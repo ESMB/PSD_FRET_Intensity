@@ -39,19 +39,6 @@ plt.xlabel('FRET Efficiency')
 plt.ylabel('Acceptor Mean Intensity')
 
 
-# Extract the coordinates and FRET efficiency
-x_coords = df['centroid-X']
-y_coords = df['centroid-Y']
-fret_efficiency = df['FRET_efficiency']
 
-# Create a scatter plot
-plt.figure(figsize=(8, 6))
-scatter = plt.scatter(x_coords, y_coords, c=fret_efficiency, cmap='viridis', vmin=0, vmax=1)
-plt.colorbar(scatter, label='FRET Efficiency')
-
-# Add labels and title
-plt.xlabel('Centroid X')
-plt.ylabel('Centroid Y')
-plt.title('Scatter Plot with FRET Efficiency as Color')
 
 plt.show()
